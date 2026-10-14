@@ -1,4 +1,7 @@
 @import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --background: #ffffff;
@@ -23,4 +26,17 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes slowBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.animate-bounce-slow {
+  animation: slowBounce 4s ease-in-out infinite;
+}
+
+.animate-pulse-slow {
+  animation: slowBounce 5s ease-in-out infinite alternate;
 }
