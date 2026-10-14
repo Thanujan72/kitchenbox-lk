@@ -1,5 +1,6 @@
 "use client";
 import { MessageCircle } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function Hero({ lang }) {
   const whatsappNumber = "+94769656552";
@@ -47,7 +48,7 @@ export default function Hero({ lang }) {
               title="Click here to check today's menu & place orders securely via WhatsApp"
               className="bg-[#f58d40] hover:bg-[#e07b32] text-white px-7 py-4 rounded-xl font-extrabold text-base flex items-center gap-3 shadow-lg transition-all duration-300 hover:-translate-y-0.5 group"
             >
-              <MessageCircle className="w-5 h-5 group-hover:scale-110 transition-transform" />
+              <FaWhatsapp className="w-6 h-6 group-hover:scale-110 transition-transform" />
               <span>
                 {lang === "en"
                   ? "Order via WhatsApp Now ↗"

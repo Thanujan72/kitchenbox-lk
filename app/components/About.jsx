@@ -3,14 +3,27 @@ export default function About({ lang }) {
     <section className="py-20 px-4 bg-white dark:bg-stone-900" id="about">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         
-        {/* Left Side: Art / Illustration */}
-        <div className="bg-[#eaf2e9] dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-900 rounded-3xl p-8 flex items-center justify-center min-h-[350px] relative overflow-hidden shadow-inner">
+        {/* Left Side: Art / Illustration with your image */}
+        <div className="bg-[#eaf2e9] dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-900 rounded-3xl p-6 sm:p-8 flex flex-col items-center justify-center min-h-[350px] relative overflow-hidden shadow-inner">
+          
+          {/* Custom Cooking Image */}
+          <div className="w-full h-56 sm:h-64 rounded-2xl overflow-hidden shadow-md mb-5 relative bg-stone-100">
+            <img 
+              src="/about-img.png" 
+              alt="Kitchen Box LK Home Cook" 
+              className="w-full h-full object-cover hover:scale-105 transition duration-500"
+              onError={(e) => {
+                // Fallback if .png is not found, tries .jpg
+                e.target.src = "/about-img.jpeg";
+              }}
+            />
+          </div>
+
           <div className="text-center">
-            <span className="text-6xl mb-4 block">🍲</span>
             <h3 className="text-xl font-extrabold text-[#103829] dark:text-white">
               {lang === 'en' ? "Freshly Prepared Daily" : "தினமும் சுடச்சுட தயாரிப்பு"}
             </h3>
-            <p className="text-xs text-stone-600 dark:text-stone-300 mt-2 max-w-xs mx-auto">
+            <p className="text-xs text-stone-600 dark:text-stone-300 mt-2 max-w-xs mx-auto leading-relaxed">
               {lang === 'en' 
                 ? "Coordinating home cooks, quality checks, and doorstep delivery across Jaffna." 
                 : "யாழ்ப்பாணத்தில் உள்ள தாய்மார்களின் சமையலை ஒருங்கிணைத்து உங்களுக்கு வழங்குவதில் பெருமிதம் கொள்கிறோம்."}
@@ -18,7 +31,7 @@ export default function About({ lang }) {
           </div>
         </div>
 
-        {/* Right Side: Content */}
+        {/* Right Side: Content (Exact Old Code) */}
         <div>
           <span className="inline-flex items-center gap-2 bg-[#e8eee0] text-[#174b38] px-4 py-1.5 rounded-full text-xs font-extrabold uppercase tracking-wider mb-4">
             <span className="w-2 h-2 rounded-full bg-[#f58d40]"></span>

@@ -1,5 +1,6 @@
 'use client';
 import { MessageCircle } from 'lucide-react';
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function CTA({ lang }) {
   const whatsappNumber = "+94769656552";
@@ -37,7 +38,7 @@ export default function CTA({ lang }) {
               rel="noopener noreferrer"
               className="bg-[#f58d40] hover:bg-[#e07b32] text-white px-7 py-4 rounded-xl font-bold text-base flex items-center gap-3 shadow-lg transition-transform hover:-translate-y-0.5 whitespace-nowrap"
             >
-              <MessageCircle className="w-5 h-5" />
+              <FaWhatsapp className="w-8 h-8 text-white" />
               <span>{lang === 'en' ? "Chat on WhatsApp ↗" : "வாட்ஸ்அப்பில் பேச ↗"}</span>
             </a>
           </div>

@@ -16,7 +16,6 @@ export default function MenuPreview({ lang }) {
         "Red rice, authentic Jaffna chicken curry, parippu, pol sambol, mallung, and crispy appalam.",
       descTa:
         "சிவப்பு அரிசி, பாரம்பரிய யாழ்ப்பாண கோழிக்கறி, பருப்பு, தேங்காய்ச் sambol, மல்லு மற்றும் மொறுமொறுப்பான அப்பளம்.",
-      price: "LKR 270",
       // First unique image for Chicken/Rice Meal
       image: "/menu-rice.jpg",
     },
@@ -29,7 +28,6 @@ export default function MenuPreview({ lang }) {
         "Wholesome rice with seasonal Jaffna vegetable curry, moru, and crispy appalam.",
       descTa:
         "யாழ்ப்பாணக் காய்கறி கறிகள், மோர் மற்றும் மொறுமொறுப்பான அப்பளத்துடன் கூடிய சைவ உணவு.",
-      price: "LKR 230",
       // Second unique image for Veg Meal (Change name if your file is menu-veg.png or something else)
       image: "/menu-veg.jpg",
     },
