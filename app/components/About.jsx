@@ -14,7 +14,7 @@ export default function About({ lang }) {
               className="w-full h-full object-cover hover:scale-105 transition duration-500"
               onError={(e) => {
                 // Fallback if .png is not found, tries .jpg
-                e.target.src = "/about-img.jpeg";
+                e.target.src = "/about-img.png";
               }}
             />
           </div>
